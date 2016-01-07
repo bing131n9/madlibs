@@ -1,7 +1,7 @@
 function generateMadlib() {
   
   // This is the starting story
-  var story = "During your winter break, you sat on someone's BODY_PART and mistook them for SUPERHERO. After apologizing NUMBER times, Santa appeared out of nowhere ";
+  var story = "During your winter break, you sat on someone's BODY_PART and mistook them for SUPERHERO. After apologizing NUMBER times, Santa appeared out of nowhere and said  ";
   
 
   var inputValue = document.getElementById("body part").value;
@@ -14,6 +14,10 @@ function generateMadlib() {
    document.getElementById("number").value;
   story = story.replace("NUMBER", inputValue);
   
+  inputValue =
+   document.getElementById("word").value;
+  story = story.replace("WORD, inputValue")
+  
   // This writes the story when the user clicks the "Generate MadLib" button"
   document.getElementById("result").innerHTML = story;
-}
+}git
